@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flask-app-config
+data:
+  ELASTICSEARCH_URL: "http://elasticsearch-service:9200"
+  ELASTICSEARCH_USER: "elastic"
+  ELASTICSEARCH_PASSWORD: "your-es-password"

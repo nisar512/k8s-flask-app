@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: elasticsearch-config
+data:
+  discovery.type: single-node
+  bootstrap.memory_lock: 'true'
+  ES_JAVA_OPTS: '-server -Xms2G -Xmx4G'
+  ELASTIC_PASSWORD: 'your-es-password'
+  xpack.security.transport.ssl.enabled: 'false'
+  xpack.security.http.ssl.enabled: 'false'
